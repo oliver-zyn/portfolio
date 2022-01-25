@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
 * {
   margin: 0;
@@ -139,6 +139,8 @@ header .header--name {
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0 3px #fff;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1398%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='url(%23SvgjsLinearGradient1399)'%3e%3c/rect%3e%3cpath d='M107.615%2c600.355C152.678%2c598.006%2c184.156%2c562.187%2c208.256%2c524.038C234.829%2c481.976%2c262.258%2c433.874%2c241.293%2c388.754C217.738%2c338.06%2c163.498%2c306.114%2c107.615%2c307.448C53.697%2c308.736%2c9.766%2c347.207%2c-15.444%2c394.885C-38.942%2c439.326%2c-38.836%2c492.445%2c-13.006%2c535.573C12.127%2c577.537%2c58.766%2c602.902%2c107.615%2c600.355' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M381.493%2c1136.756C435.863%2c1138.011%2c490.714%2c1114.779%2c516.832%2c1067.077C542.131%2c1020.872%2c528.961%2c964.507%2c499.837%2c920.612C473.847%2c881.44%2c428.501%2c863.486%2c381.493%2c863.096C333.673%2c862.699%2c285.218%2c878.178%2c259.696%2c918.62C232.529%2c961.67%2c231.742%2c1016.624%2c256.558%2c1061.07C281.999%2c1106.635%2c329.32%2c1135.552%2c381.493%2c1136.756' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1249.7162367364122 613.3386633498977L1280.3245121513623 469.3380492335135 1049.019453269311 495.42594316928023z' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M206.614%2c1040.123C275.043%2c1035.898%2c341.896%2c1010.525%2c376.848%2c951.545C412.452%2c891.464%2c407.557%2c817.83%2c374.944%2c756.075C339.776%2c689.483%2c281.913%2c630.364%2c206.614%2c629.198C129.738%2c628.007%2c69.043%2c685.08%2c29.002%2c750.716C-13.204%2c819.901%2c-46.785%2c906.013%2c-4.395%2c975.086C36.867%2c1042.32%2c127.878%2c1044.985%2c206.614%2c1040.123' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1318.42%2c808.848C1402.504%2c805.633%2c1444.45%2c716.175%2c1485.219%2c642.566C1524.116%2c572.337%2c1569.19%2c494.09%2c1532.221%2c422.827C1493.264%2c347.731%2c1402.981%2c318.516%2c1318.42%2c321.036C1238.446%2c323.419%2c1165.132%2c365.38%2c1125.605%2c434.943C1086.547%2c503.682%2c1091.726%2c585.958%2c1127.962%2c656.226C1167.926%2c733.724%2c1231.288%2c812.179%2c1318.42%2c808.848' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1880.1282330864974 539.9570209819859L1928.915707073211 195.20043054120686 1644.7579697608976 304.27836617244515z' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M888.8937100931969-76.98456698243929L680.965897767015 63.26451331998406 821.2149780694383 271.19232564616595 1029.1427903956203 130.9432453437426z' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1520.419047027967 255.63260359521306L1683.4532613778645 443.1820130794331 1871.0026708620844 280.14779872953574 1707.968456512187 92.5983892453157z' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M651.808%2c214.26C711.668%2c217.448%2c768.493%2c185.992%2c799.544%2c134.716C831.746%2c81.54%2c839.311%2c12.839%2c805.293%2c-39.194C773.608%2c-87.658%2c709.681%2c-93.114%2c651.808%2c-91.255C598.1%2c-89.53%2c541.476%2c-76.329%2c514.503%2c-29.853C487.449%2c16.763%2c502.604%2c73.331%2c529.027%2c120.308C556.105%2c168.449%2c596.652%2c211.322%2c651.808%2c214.26' fill='rgba(44%2c 44%2c 44%2c 0.9)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1398'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='10.94%25' y1='-19.44%25' x2='89.06%25' y2='119.44%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1399'%3e%3cstop stop-color='rgba(4%2c 4%2c 4%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
 
@@ -187,9 +189,14 @@ header .header--name {
     animation: intro-anim .7s .8s forwards ease-in-out;
 }
 
+.title {
+  font-weight: 300;
+}
+
 .title--effect {
     font-size: 4em;
     padding: 2px 0;
+    font-weight: 700;
 }
 
 /* From cssbuttons.io by @nikk7007 */
@@ -230,7 +237,7 @@ header .header--name {
 }
    
 .title--button:hover {
-    color: #111;
+    color: #000000;
 }
 
 @keyframes intro-anim {
@@ -254,6 +261,46 @@ header .header--name {
       transform: translateX(0);
     }
   }
+
+@media (max-width: 876px) {
+  .intro--social {
+    position: absolute;
+    right: auto;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 15px 20px 10px 20px;
+  }
+}
+
+@media (max-width: 724px) {
+  .title--effect {
+    font-size: 3em;
+  }
+
+  .title {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 520px) {
+  .title--effect {
+    font-size: 2.5em;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+}
+
+@media (max-height: 584px) {
+  .intro--social {
+    display: none;
+  }
+}
 
 /* RODAPÉ */
 
@@ -317,14 +364,14 @@ footer {
     gap: 0.5rem;
   }
 
-  #icon {
+  .btnMobile--icon {
     display: block;
     border-top: 2px solid white;
     width: 20px;
   }
 
-  #icon::after,
-  #icon::before {
+  .btnMobile--icon::after,
+  .btnMobile--icon::before {
     content: "";
     display: block;
     width: 20px;
@@ -336,16 +383,34 @@ footer {
     position: relative;
   }
 
-  .navbar.active #icon {
+  .navbar.active .btnMobile--icon {
     border-top-color: transparent;
   }
 
-  .navbar.active #icon::before {
+  .navbar.active .btnMobile--icon::before {
     transform: rotate(135deg);
   }
 
-  .navbar.active #icon::after {
+  .navbar.active .btnMobile--icon::after {
     transform: rotate(-135deg);
     top: -7px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
 }
