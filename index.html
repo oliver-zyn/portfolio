@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/hover.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>| HOME</title>
+</head>
+<body>
+    <header>
+        <h1 class="header--name">
+            <span class="name--symbol">&Omicron;</span> / OLIVERZYN
+        </h1>
+        <nav class="navbar" id="navbar">
+            <button class="navbar--btnMobile" id="navbar--btnMobile" onclick="menu()">
+                <span id="icon"></span>
+            </button>
+            <div class="navbar--links">
+                <a href="#" class="link">HOME<span class="link--linha"></span></a>
+                <a href="#projetos" class="link" >PROJETOS<span class="link--linha"></span></a>
+                <a href="#" class="link">CONTATO<span class="link--linha"></span></a>
+                <a href="#" class="link">SOBRE<span class="link--linha"></span></a>
+            </div>
+        </nav>
+    </header>
+    <section class="intro">
+        <div class="intro--title">
+            <h1>Olá, me chamo</h1>
+            <h1 class="title--effect">Oliver Mayer</h1>
+            <h1>Front-End developer </h1>
+            <a class="title--button">Clique aqui</a>
+        </div>
+        <div class="intro--social">
+            <a href="https://github.com/oliver-zyn" target="_blank" class="social--item"><i class="fab fa-github"></i></a>
+            <a href="mailto:olivermayer15@gmail.com" target="_blank" class="social--item"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/oliver-lohann-mayer-61ab3b215" target="_blank" class="social--item"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span class="o">OLIVERZYN</span> 2021 - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/btn-mobile.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        var $doc = $('html, body');
+        $('a').click(function() {
+            $doc.animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+            return false;
+        });
+    </script>
+</body>
+</html>
