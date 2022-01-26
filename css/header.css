@@ -1,0 +1,187 @@
+header {
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 999;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #ffffff27;
+  background: #00000060;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  animation: header-anim 1s forwards ease-in-out;
+}
+
+header .header--name {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 0 0 2px white;
+}
+
+.name--symbol {
+  color: var(--neon2);
+  text-shadow: 0 0 4px var(--neon2);
+  animation: symbol-anim 7s 0.5s infinite alternate;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-shadow: 0 0 2px #fff;
+  font-size: 0.9em;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+
+.link:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+.link:not(:hover) {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1);
+}
+
+.link:hover .link--linha {
+  animation: link-anim 0.9s linear infinite;
+}
+
+.link .link--linha {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+}
+
+@keyframes symbol-anim {
+  0% {
+    color: var(--neon2);
+    text-shadow: 0 0 4px var(--neon2);
+  }
+  50% {
+    color: var(--neon4);
+    text-shadow: 0 0 4px var(--neon4);
+  }
+  100% {
+    color: var(--neon3);
+    text-shadow: 0 0 4px var(--neon3);
+  }
+}
+
+@keyframes link-anim {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes header-anim {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* BOTÃO MOBILE */
+
+.navbar--btnMobile {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  .navbar--btnMobile {
+    display: block;
+  }
+
+  .navbar--links {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 80px;
+    top: 70px;
+    right: 0px;
+    height: 0;
+    background-color: #000000;
+    z-index: 1000;
+    transition: .3s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  .navbar.active .navbar--links {
+    height: 100vh;
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  .navbar--links .link {
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .navbar--btnMobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0 0 2px white;
+    gap: 0.5rem;
+  }
+
+  .btnMobile--icon {
+    display: block;
+    border-top: 2px solid white;
+    width: 20px;
+  }
+
+  .btnMobile--icon::after,
+  .btnMobile--icon::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: blue;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .navbar.active .btnMobile--icon {
+    border-top-color: transparent;
+  }
+
+  .navbar.active .btnMobile--icon::before {
+    transform: rotate(135deg);
+  }
+
+  .navbar.active .btnMobile--icon::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
