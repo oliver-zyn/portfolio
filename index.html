@@ -1,263 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="css/intro.css" />
+  <link rel="stylesheet" href="css/header.css" />
 
-    <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/intro.css" />
 
-    <link rel="stylesheet" href="css/projects.css" />
+  <link rel="stylesheet" href="css/about.css" />
 
-    <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css" />
 
-    <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/skills.css">
 
-    <title>Portfólio | Oliverzyn</title>
-  </head>
-  <body>
-    <header>
-      <h1 class="header--name">
-        <span class="name--symbol">&Omicron;</span> / OLIVERZYN
-      </h1>
-      <nav class="navbar" id="navbar">
-        <button
-          class="navbar--btnMobile"
-          id="navbar--btnMobile"
-          onclick="menu()"
-        >
-          <span class="btnMobile--icon"></span>
-        </button>
-        <div class="navbar--links">
-          <a href="#intro" class="link"
-            >HOME<span class="link--linha"></span
-          ></a>
-          <a href="#about" class="link"
-            >SOBRE<span class="link--linha"></span
-          ></a>
-          <a href="#projects" class="link"
-            >PROJETOS<span class="link--linha"></span
-          ></a>
-          <a href="#" class="link">CONTATO<span class="link--linha"></span></a>
-        </div>
-      </nav>
-    </header>
-    <section class="intro" id="intro">
-      <div class="intro--title">
-        <h1 class="title">Olá, me chamo</h1>
-        <h1 class="title--effect">Oliver Mayer</h1>
-        <h1 class="title">Front-End developer</h1>
-        <a class="title--button">Projetos</a>
+  <link rel="stylesheet" href="css/contact.css">
+
+  <title>Portfólio | Oliverzyn</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="header--name">
+      <span class="name--symbol">&Omicron;</span> / OLIVERZYN
+    </h1>
+    <nav class="navbar" id="navbar">
+      <button class="navbar--btnMobile" id="navbar--btnMobile" onclick="menu()">
+        <span class="btnMobile--icon"></span>
+      </button>
+      <div class="navbar--links">
+        <!-- <a href="#intro" class="link">HOME<span class="link--linha"></span></a> -->
+        <a href="#about" class="link">QUEM SOU<span class="link--linha"></span></a>
+        <a href="#projects" class="link">PROJETOS<span class="link--linha"></span></a>
+        <a href="#skills" class="link">HABILIDADES<span class="link--linha"></span></a>
+        <a href="#contact" class="link">CONTATO<span class="link--linha"></span></a>
       </div>
-      <div class="intro--social">
-        <a
-          href="https://github.com/oliver-zyn"
-          target="_blank"
-          class="social--item"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="mailto:olivermayer15@gmail.com"
-          target="_blank"
-          class="social--item"
-          ><i class="fas fa-envelope"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/oliver-lohann-mayer-61ab3b215"
-          target="_blank"
-          class="social--item"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-      </div>
-    </section>
+    </nav>
+  </header>
+  
+  <section class="intro" id="intro">
+    <div class="intro--title">
+      <h1 class="title">Olá, me chamo</h1>
+      <h1 class="title--effect">Oliver Mayer</h1>
+      <h1 class="title">Web Developer</h1>
+      <a href="#projects" class="title--button">Projetos</a>
+    </div>
+    <div class="intro--social">
+      <a href="https://github.com/oliver-zyn" target="_blank" class="social--item"><i class="fab fa-github"></i></a>
+      <a href="mailto:olivermayer15@gmail.com" target="_blank" class="social--item"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/oliver-lohann-mayer-61ab3b215" target="_blank" class="social--item"><i
+          class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
 
-    <section class="about" id="about">
-      <div class="about--img reveal">
-        <img src="images/about2.svg" alt="" />
-      </div>
-      <div class="about--text reveal">
-        <h1 class="about--title">Quem sou?</h1>
-        <p class="about--paragraph">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
-          reiciendis quas nobis possimus praesentium tenetur quis earum
-          voluptatum, sequi quo unde eligendi sapiente. Neque quos aperiam
-          dolore deserunt asperiores?
-        </p>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="projects--title reveal">
-        <h1>Projetos</h1>
-        <hr />
-      </div>
-      <div class="projects--cards reveal">
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card--front" id="card1"></div>
-          <div class="card--back">
-            <h1>Título Projeto</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
-              laborum nulla, autem, ducimus quasi itaque mollitia quod velit
-              esse modi at qui repudiandae quas. Ullam itaque dolores maiores
-              iste consequuntur.
-            </p>
-            <div class="back--icons">
-              <a href="#" class="icon" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="#" class="icon" target="_blank"
-                ><i class="fas fa-globe"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills">
-      <div>
-            
-      </div>
-    </section>
-
-    <footer>
-      <p>
-        &copy; <span class="footer-effect">OLIVERZYN</span> 2021 - Todos os
-        direitos reservados
+  <section class="about" id="about">
+    <div class="about--img reveal">
+      <img src="images/about2.svg" alt="profile" />
+    </div>
+    <div class="about--text reveal">
+      <h1 class="about--title">Quem sou?</h1>
+      <p class="about--paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet
+        reiciendis quas nobis possimus praesentium tenetur quis earum
+        voluptatum, sequi quo unde eligendi sapiente. Neque quos aperiam
+        dolore deserunt asperiores?
       </p>
-    </footer>
+    </div>
+  </section>
 
-    <script src="js/btn-mobile.js"></script>
+  <section class="projects" id="projects">
+    <div class="projects--title reveal">
+      <h1>Projetos</h1>
+      <hr />
+    </div>
+    <div class="projects--cards reveal">
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card--front" id="card1"></div>
+        <div class="card--back">
+          <h1>Título Projeto</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero,
+            laborum nulla, autem, ducimus quasi itaque mollitia quod velit
+            esse modi at qui repudiandae quas. Ullam itaque dolores maiores
+            iste consequuntur.
+          </p>
+          <div class="back--icons">
+            <a href="#" class="icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" class="icon" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <section class="skills" id="skills">
+    <div class="skills--title reveal">
+      <h1>Habilidades</h1>
+      <hr />
+    </div>
+    <div class="skills--container reveal">
+      <div class="skills--box">
+        <h1>Front-End</h1>
+        <div class="skills--items">
+          <div class="skills--column">
+            <div class="skills--boxColumn">
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>HTML</h2>
+                  <p>Avançado</p>
+                </div>
+              </div>
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>JAVASCRIPT</h2>
+                  <p>Avançado</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills--column">
+            <div class="skills--boxColumn">
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>CSS</h2>
+                  <p>Avançado</p>
+                </div>
+              </div>
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>JQUERY</h2>
+                  <p>Básico</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <div class="skills--box">
+        <h1>Back-End</h1>
+        <div class="skills--items">
+          <div class="skills--column">
+            <div class="skills--boxColumn">
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>NODE JS</h2>
+                  <p>Estudando</p>
+                </div>
+              </div>
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>SQL</h2>
+                  <p>Intermediário</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skills--column">
+            <div class="skills--boxColumn">
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>TYPESCRIPT</h2>
+                  <p>Intermediário</p>
+                </div>
+              </div>
+              <div class="skills--item">
+                <span></span>
+                <div>
+                  <h2>MONGODB</h2>
+                  <p>Estudando</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-      var $doc = $("html, body");
-      $("a").click(function () {
-        $doc.animate(
-          {
-            scrollTop: $($.attr(this, "href")).offset().top,
-          },
-          500
-        );
-        return false;
-      });
-    </script>
-  </body>
+  <section class="contact" id="contact">
+    <div class="contact--title reveal">
+      <h1>Oliverzyn</h1>
+      <span></span>
+    </div>
+    <div class="contact--container reveal">
+        <div class="contact--links">
+          <a href="#about">Sobre</a>
+          <a href="#projects">Projetos</a>
+          <a href="#skills">Habilidades</a>
+        </div>
+        <div class="contact--social">
+            <div class="contact--item">
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="contact--item">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact--item">
+              <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="contact--copy">
+          <p>&copy; Oliverzyn - Todos os direitos reservados</p>
+        </div>
+    </div>
+  </section>
+
+  <script src="js/btn-mobile.js"></script>
+
+  <script src="js/script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    var $doc = $("html, body");
+    $("a").click(function () {
+      $doc.animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        500
+      );
+      return false;
+    });
+  </script>
+</body>
+
 </html>

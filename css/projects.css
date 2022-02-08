@@ -4,7 +4,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 70px 50px;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0 3px #fff;
 }
 
 .projects--title {

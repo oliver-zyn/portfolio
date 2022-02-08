@@ -1,6 +1,9 @@
-let btn = document.querySelector('#navbar--btnMobile')
+let nav = document.querySelector('#navbar')
 
 function menu(){
-    let nav = document.querySelector('#navbar')
     nav.classList.toggle('active')
+}
+
+window.onscroll = () => {
+    nav.classList.remove('active')
 }
