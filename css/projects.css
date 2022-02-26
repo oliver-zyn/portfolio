@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 70px 50px;
+    padding: 70px 50px 110px;
     border-bottom: 1px solid #fff;
     box-shadow: 0 0 3px #fff;
 }
@@ -36,15 +36,15 @@
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .card {
     cursor: pointer;
-    width: 330px;
-    height: 250px;
+    width: 350px;
+    height: 178px;
     position: relative;
-   }
+}
 
 .card--front, .card--back {
     width: 100%;
@@ -58,6 +58,12 @@
 }
 .card--front {
     transform: perspective(900px) rotateY(0deg);
+    border: 2px solid #fff;
+    box-shadow: 0 0 2px #fff;
+}
+
+.card--front img {
+    width: 100%;
 }
 
 .card--back {
@@ -65,7 +71,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 25px;
+    padding: 15px 25px;
     transform: perspective(900px) rotateY(180deg);
 }
 
@@ -88,16 +94,19 @@
 }
 
 .card--back h1 {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
+    font-size: 1.2rem;
 }
 
 .card--back p {
     font-size: .9rem;
     text-align: justify;
+    font-weight: 400;
+    line-height: 1rem;
 }
 
 .back--icons {
-    padding-top: 15px;
+    padding-top: 12px;
     display: flex;
     gap: 25px;
 }
@@ -105,5 +114,5 @@
 .icon {
     display: block;
     color: #000000;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
 }
